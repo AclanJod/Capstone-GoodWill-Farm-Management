@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.custom-bg {
+    background-color: #f75555;
+}
+.appLogo {
+    color: white;
+}
+.custom-padX {
+    padding: 0 80px 0 80px;
+}
+.card-font {
+    font-family: roboto mono;
+}
