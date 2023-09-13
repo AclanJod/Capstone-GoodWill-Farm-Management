@@ -12,3 +12,10 @@
 .card-font {
     font-family: roboto mono;
 }
+.btn-ctm {
+    width: 10em;
+    font-size: 20px;
+}
+.icon-white {
+    color: white;
+}
