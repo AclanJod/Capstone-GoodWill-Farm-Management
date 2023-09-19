@@ -24,35 +24,35 @@
                             <span class="fs-4 d-none d-sm-inline">User</span>
                         </div>
                     </a>
-                    <div class="d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column justify-content-between py-5">
                         <ul class="nav nav-tabs flex-column" style="list-style-type: none;">
                             <li>
-                                <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
-                                    <i class="fa-regular fa-file px-2"></i> Dashboard</a> 
-                                </li>
-                                <hr class="text-white">
-                                <li>
-                                <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
-                                    <i class="fa-solid fa-piggy-bank px-2"></i> Manage Pigs</a>
-                                </li>
-                                <hr class="text-white">
-                                <li>
-                                <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
-                                    <i class="fa-regular fa-calendar px-2"></i> Set Schedule</a>
-                                </li>
-                                <hr class="text-white">
-                                <li>
-                                <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
-                                    <i class="fa-regular fa-keyboard px-2"></i> Data Entry</a>
-                                </li>
-                            </ul>
-                            <div class="text-center align-items-center" style="margin-top: 15em;">
-                                <button type="button" class="btn btn-warning btn-ctm btn-block">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
-                                    Logout
-                                </button>
-                            </div>
+                            <a class="nav-link text-decoration-none text-white d-flex align-items-center" href="#" aria-current="page">
+                                <i class="fa-regular fa-file px-2"></i> Dashboard </a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
+                                <i class="fa-solid fa-piggy-bank px-2"></i> Manage Pigs</a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
+                                <i class="fa-regular fa-calendar px-2"></i> Set Schedule</a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none text-white" href="#" aria-current="page">
+                                <i class="fa-regular fa-keyboard px-2"></i> Data Entry</a>
+                            </li>
+                        </ul>
+                        <div class="text-center align-items-center" style="margin-top: 10em;">
+                            <button type="button" class="btn btn-warning btn-ctm btn-block shadow">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Logout
+                            </button>
                         </div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col py-3" style="width: 80em;">
@@ -69,24 +69,65 @@
                     </div>
                 </div>
             </div> -->
-            <div class="col py-3 custom-padX gap-5" style="height: 15rem;">
-                    <div class="row py-3 gap-4">
-                        <div class="bg-primary card px-2" style="width: 22rem;">
-                            <div class="card-body card-font">
-                                <img src="../pig.png "  style="height: 120px;">
-                                <p class="px-3"> Pigs </p>
+            <div class="col py-2 px-5 gap-5" style="height: 10em;">
+                    <div class="row py-1 mx-1 gap-4">
+                        <div class="bg-primary card px-2" style="width: 23rem;">
+                            <div class="col col-auto card-body card-font d-flex justify-content-between">
+                                <div>
+                                    <img src="../pig.png "  style="height: 120px;">
+                                    <p class="px-1 fs-3 text-white"> Pigs </p>
+                                </div>
+                                <div class="py-3 my-3">
+                                    <span class="text-white"> number here </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-warning card px-2" style="width: 22rem;">
-                            <div class="card-body">
-                                <img src="../pig.png" style="height: 120px;">
-                                <p class="px-3"> Piglets </p>
+                        <div class="bg-warning card px-2" style="width: 23rem;">
+                            <div class="col col-auto card-body card-font d-flex justify-content-between">
+                                <div>
+                                    <img src="../pig.png "  style="height: 120px;">
+                                    <p class="px-1 fs-3 text-white"> Piglets </p>
+                                </div>
+                                <div class="py-3 my-3">
+                                    <span class="text-white"> number here </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="custom-bg card px-2" style="width: 22rem;">
-                            <div class="card-body">
-                                <img src="../feeding.png" style="height: 120px;">
-                                <p class="px-3"> Feed Stock </p>
+                        <div class="custom-bg card px-2" style="width: 23rem;">
+                            <div class="col col-auto card-body card-font d-flex justify-content-between">
+                                <div>
+                                    <img src="../feeding.png "  style="height: 120px;">
+                                    <p class="px-1 fs-3 text-white"> Feed Stocks </p>
+                                </div>
+                                <div class="py-3 my-3">
+                                    <span class="text-white"> number here </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col-4 py-1">
+                            <div class="custom-bg card d-flex text-center">
+                                <span class="text-white pt-2"> Schedule Today </span> <hr class="text-white">
+                                <Ul class="d-flex flex-column">
+                                    <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                        <span>Task Name </span>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </li>
+                                    <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                        <span>Task Name </span>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </li>
+                                    <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                        <span>Task Name </span>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </li>
+                                </Ul>
+                            </div>
+                        </div>
+                        <div class="col-8 py-1">
+                            <div class="bg-primary card d-flex text-center">
+                                <span class="text-white pt-2"> Calendar here </span> <hr class="text-white">
                             </div>
                         </div>
                     </div>
