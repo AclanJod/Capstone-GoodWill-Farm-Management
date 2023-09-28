@@ -14,47 +14,49 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid overflow-hidden">
         <div class="row flex nowrap">
-            <div class="custom-bg col-auto col-md-2 min-vh-100">
-                <div class="custom-bg p-2">
-                    <a href="#" class="d-flex text-decoration-none mt-1 align-items-center text-white">
-                        <div class="text-center align-items-center mx-5 mb-2">
-                            <img src="../user_white.png" class="rounded mx-auto d-block my-2" style="height: 100px;" alt="...">
-                            <span class="fs-4 d-none d-sm-inline">User</span>
-                        </div>
-                    </a>
-                    <div class="d-flex flex-column justify-content-between py-5">
+            <nav class="col-auto sidebar custom-bg vh-100" style="width: 15%;">
+                <div class="position-sticky d-flex flex-column justify-content-between">
+                    <div class="d-flex justify-content-center text-white pt-3">
+                        <img src="../user_white.png" style="width: 60%;">
+                    </div>
+                    <div class="d-flex justify-content-center text-white">
+                        <span class="fs-5 font-weight-bold"> User</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column py-5" style="height: 600px;">
+                    <div>
                         <ul class="nav nav-tabs flex-column" style="list-style-type: none;">
                             <li>
-                            <a class="nav-link text-decoration-none text-white hover-fx" href="#" aria-current="page">
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
                                 <i class="fa-regular fa-file px-2"></i> Dashboard </a>
                             </li>
                             <hr class="text-white">
                             <li>
-                            <a class="nav-link text-decoration-none text-white hover-fx" href="#" aria-current="page">
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
                                 <i class="fa-solid fa-piggy-bank px-2"></i> Manage Pigs</a>
                             </li>
                             <hr class="text-white">
                             <li>
-                            <a class="nav-link text-decoration-none text-white hover-fx" href="#" aria-current="page">
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
                                 <i class="fa-regular fa-calendar px-2"></i> Set Schedule</a>
                             </li>
                             <hr class="text-white">
                             <li>
-                            <a class="nav-link text-decoration-none text-white hover-fx" href="#" aria-current="page">
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
                                 <i class="fa-regular fa-keyboard px-2"></i> Data Entry</a>
                             </li>
                         </ul>
-                        <div class="text-center align-items-center" style="margin-top: 10em;">
-                            <button type="button" class="btn btn-warning btn-ctm btn-block shadow">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                Logout
-                            </button>
-                        </div>
+                    </div>
+                    <div class="text-center align-items-center mt-auto" style="margin-top: 10em;">
+                        <button type="button" class="btn btn-warning btn-ctm btn-block shadow">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </button>
                     </div>
                 </div>
-            </div>
+            </nav>
             <!-- <div class="col py-3" style="width: 80em;">
                 <div class="bg-primary card px-5" style="width: 20rem;">
                     <div class="card-body card-font">
