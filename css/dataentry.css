@@ -81,7 +81,7 @@
   
   #dEntry_button:after {
     content: "";
-    background: #90EE90;
+    background: #b5f8b5;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -98,3 +98,8 @@
     opacity: 1;
     transition: 0s
   }
+.ctm-btn {
+    background-color: transparent;
+    outline: none;
+    background-color: #f75555;
+}
