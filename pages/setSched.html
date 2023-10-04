@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css file -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" href="../pig3.png">
+    <title>Manage Pigs | PORCUS</title>
+</head>
+
+<body>
+    <div class="container-fluid overflow-hidden">
+        <div class="row flex-nowrap">
+            <nav class="col-auto sidebar custom-bg vh-100" style="width: 15%;">
+                <div class="position-sticky d-flex flex-column justify-content-between">
+                    <div class="d-flex justify-content-center text-white pt-3">
+                        <img src="../user_white.png" style="width: 60%;">
+                    </div>
+                    <div class="d-flex justify-content-center text-white">
+                        <span class="fs-5 font-weight-bold pt-2"> User</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column py-5" style="height: 600px;">
+                    <div>
+                        <ul class="nav nav-tabs flex-column" style="list-style-type: none;">
+                            <li>
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
+                                <i class="fa-regular fa-file pe-3"></i> Dashboard </a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
+                                <i class="fa-solid fa-piggy-bank pe-3"></i> Manage Pigs</a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
+                                <i class="fa-regular fa-calendar pe-3"></i> Set Schedule</a>
+                            </li>
+                            <hr class="text-white">
+                            <li>
+                            <a class="nav-link text-decoration-none" id="hover-fx" href="#" aria-current="page">
+                                <i class="fa-regular fa-keyboard pe-3"></i> Data Entry</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center align-items-center mt-auto" style="margin-top: 10em;">
+                        <button type="button" class="btn btn-warning btn-ctm btn-block shadow">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- <div class="col py-3" style="width: 80em;">
+                <div class="bg-primary card px-5" style="width: 20rem;">
+                    <div class="card-body card-font">
+                        <img src="../pig.png " style="height: 120px;">
+                        <p> Pigs </p>
+                    </div>
+                </div>
+                <div class="bg-primary card px-5" style="width: 20rem;">
+                    <div class="card-body card-font">
+                        <img src="../pig.png " style="height: 120px;">
+                        <p> Pigs </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col py-2 px-5 gap-5" style="height: 10em;">
+                <span class="mx-0 fw-bold custom-font-color">
+                    MANAGE PIGS
+                </span>
+                <div class="container custom-bg w-100 ">
+                    <div class="col d-flex justify-content-between">
+                        <div>
+                            <button class="rounded mt-4">
+                                <i class="fa-solid fa-plus"></i>
+                                <span class="fw-bold me-2"> SET SCHEDULE </span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="ctm-btn py-1" style="transform:translate(300px,3px); height:30px;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="text" class="rounded my-3 align-middle" style="width: 300px; height:40px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-4 py-1">
+                        <div class="custom-bg-2 card d-flex text-center">
+                            <span class="text-white pt-2"> Schedule Today </span> <hr class="text-white">
+                            <ul class="d-flex flex-column">
+                                <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                    <span>Task Name </span> 
+                                    <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                </li>
+                                <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                    <span>Task Name </span>
+                                    <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                </li>
+                                <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                    <span>Task Name </span>
+                                    <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                </li>
+                                <li class="bg-light py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 90%;">
+                                    <span>Task Name </span>
+                                    <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-8 py-1">
+                        <div class="bg-primary card d-flex text-center">
+                            <span class="text-white pt-2"> Calendar here </span> <hr class="text-white">
+                        </div>
+                    </div>
+                </div>           
+                <div class="row px-3 gap-auto">
+                    <div class="col-6 py-1">
+                        <div class="bg-light card d-flex text-center">
+                            <span class="fw-bold pt-2"> To Do </span> <hr>
+                            <ul class="d-flex flex-column">
+                                <li class="bg-primary rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                                <li class="bg-primary rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                                <li class="bg-primary rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 py-1">
+                        <div class="bg-light card d-flex text-center">
+                            <span class="fw-bold pt-2"> Done </span> <hr>
+                            <ul class="d-flex flex-column">
+                                <li class="bg-warning rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                                <li class="bg-warning rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                                <li class="bg-warning rounded py-2 px-1 mt-1 text-decoration-none d-flex justify-content-between" style="list-style-type: none; width: 95%;">
+                                    <div>
+                                        <span> Task Name </span> <br>
+                                        <span> Due Date </span> <br>
+                                        <span> Due Time </span> 
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+</body>
+</html>
